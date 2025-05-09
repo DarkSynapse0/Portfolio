@@ -1,9 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Player } from "@lottiefiles/react-lottie-player";
+import dynamic from "next/dynamic";
 import animationData from "../LottieFiles/animationData4.json";
 import { abrilFatface, josefinSlab, lato } from "../components/Fonts";
+
+const Player = dynamic(
+  () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
@@ -28,8 +33,8 @@ export default function Home() {
           </span>
         </h1>
         <p className="mt-4 mb-8 text-lg md:text-xl lg:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0">
-          👋 My name is Manish. I&apos;m a Frontend Developer and it&apos;s nice to meet
-          you all.
+          👋 My name is Manish. I&apos;m a Frontend Developer and it&apos;s nice
+          to meet you all.
         </p>
         <Link
           href="/about"

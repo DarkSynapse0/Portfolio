@@ -36,7 +36,7 @@ const projects = [
     Img: CCT,
     title: "Currency Converter Tool",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque sed vero consectetur dolorum dolor esse consequuntur, optio voluptate expedita. Molestias non autem hic! Ratione, ipsa!",
-    link: "https://icodethis.com/3200",
+    link: "https://icodethis.com/code/3200",
   },
 ];
 

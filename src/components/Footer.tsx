@@ -9,9 +9,8 @@ const Footer = () => {
         {/* Left: Site Name & Intro */}
         <div>
           <h2 className="text-2xl font-bold">MG.</h2>
-          <p className="text-sm text-gray-600 max-w-sm">
-            A personal portfolio - showcasing projects,
-            skills, and creativity.
+          <p className="text-sm text-gray-400 max-w-sm">
+            A personal portfolio - showcasing projects, skills, and creativity.
           </p>
         </div>
 
@@ -25,7 +24,7 @@ const Footer = () => {
             <Github className="w-5 h-5 transition-colors" />
           </Link>
           <Link
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/manish-ghimire-b90894286/"
             target="_blank"
             aria-label="LinkedIn"
           >

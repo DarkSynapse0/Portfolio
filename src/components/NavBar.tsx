@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react";
 const NavBar = () => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +46,7 @@ const NavBar = () => {
         </Link>
 
         <button
-          className="md:hidden text-black"
+          className="md:hidden text-black cursor-pointer"
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >

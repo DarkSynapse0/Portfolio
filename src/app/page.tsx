@@ -5,6 +5,8 @@ import dynamic from "next/dynamic";
 import animationData from "../LottieFiles/animationData4.json";
 import { abrilFatface, josefinSlab, lato } from "../components/Fonts";
 
+
+// made dynamic import of the lottiefiles
 const Player = dynamic(
   () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
   { ssr: false }
@@ -13,7 +15,7 @@ const Player = dynamic(
 export default function Home() {
   return (
     <div
-      className={`${lato.className} bg-white min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-evenly text-black p-6 md:p-12 lg:p-20 gap-10`}
+      className={`${lato.className} bg-white min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-evenly text-black p-6 md:p-12 lg:p-20`}
     >
       {/* Left Section: Text */}
       <motion.div

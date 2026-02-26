@@ -3,11 +3,18 @@ import RCE from "../../Gallery/RCE.png";
 import DG from "../../Gallery/DG.png";
 import PT from "../../Gallery/PT.png";
 import CCT from "../../Gallery/CCT.png";
+import oraculum from "../../../Gallery/oraculum.png";
 import ProjectCard from "../../components/ProjectCard";
 import { abrilFatface } from "@/components/Fonts";
 
 // Project data object
 const projects = [
+  {
+    Img: oraculum,
+    title: "Oraculum",
+    desc: "Oraculum is an academic Q&A platform for schools and colleges, combining AI assistance with verified teacher responses to make learning structured, reliable, and collaborative.",
+    href: "/projects/oraculum",
+  },
   {
     Img: RCE,
     title: "Random Country Explorer",

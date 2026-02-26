@@ -4,12 +4,20 @@ import RCE from "../../../Gallery/RCE.png";
 import DG from "../../../Gallery/DG.png";
 import PT from "../../../Gallery/PT.png";
 import CCT from "../../../Gallery/CCT.png";
+import oraculum from "../../../Gallery/oraculum.png";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { abrilFatface, josefinSlab, lato } from "@/components/Fonts";
 
 const projects = [
+  {
+    slug: "oraculum",
+    Img: oraculum,
+    title: "Oraculum",
+    desc: "Oraculum is an academic Q&A platform for schools and colleges, combining AI assistance with verified teacher responses to make learning structured, reliable, and collaborative.",
+    link: "https://oraculum.manishghimire01.com.np/",
+  },
   {
     slug: "random-country-explorer",
     Img: RCE,
@@ -36,7 +44,7 @@ const projects = [
     Img: CCT,
     title: "Currency Converter Tool",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque sed vero consectetur dolorum dolor esse consequuntur, optio voluptate expedita. Molestias non autem hic! Ratione, ipsa!",
-    link: "https://icodethis.com/code/3200",
+    link: "https://icodethis.com/3200",
   },
 ];
 

@@ -3,7 +3,7 @@ import RCE from "../../Gallery/RCE.png";
 import DG from "../../Gallery/DG.png";
 import PT from "../../Gallery/PT.png";
 import CCT from "../../Gallery/CCT.png";
-import oraculum from "../../../Gallery/oraculum.png";
+import oraculum from "../../Gallery/oraculum.png";
 import ProjectCard from "../../components/ProjectCard";
 import { abrilFatface } from "@/components/Fonts";
 

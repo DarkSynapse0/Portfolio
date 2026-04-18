@@ -51,11 +51,13 @@ const projects = [
 const page = () => {
   return (
     <section className="w-full p-10 min-h-screen flex items-center justify-center">
-      <div className="mt-20 flex items-center justify-center flex-col gap-10">
+      <div className="mt-20 flex flex-col items-center gap-10 w-full max-w-7xl">
         <h1 className={`${abrilFatface.className} text-5xl`}>My works</h1>
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
       </div>
     </section>
   );

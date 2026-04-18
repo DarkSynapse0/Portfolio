@@ -18,7 +18,7 @@ const ProjectCard = ({ Img, title, desc, href }: ProjectCardProps) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="w-full max-w-md md:max-w-lg lg:max-w-xl flex flex-col items-start justify-center rounded-3xl overflow-hidden border mx-auto shadow-md"
+      className="w-full flex flex-col items-start justify-center rounded-3xl overflow-hidden border shadow-md"
     >
       {/* Image Section */}
       <div className="relative w-full aspect-[3/1]">

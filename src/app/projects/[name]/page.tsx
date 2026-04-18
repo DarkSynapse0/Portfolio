@@ -5,12 +5,20 @@ import DG from "../../../Gallery/DG.png";
 import PT from "../../../Gallery/PT.png";
 import CCT from "../../../Gallery/CCT.png";
 import oraculum from "../../../Gallery/oraculum.png";
+import nayaghar from "../../../Gallery/nayaghar.png";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { abrilFatface, josefinSlab, lato } from "@/components/Fonts";
 
 const projects = [
+  {
+    slug: "nayaghar",
+    Img: nayaghar,
+    title: "NayaGhar",
+    desc: "NayaGhar is a housing platform that connects students and young professionals moving to cities across Nepal with safe, affordable, and verified housing options.",
+    link: "https://nayaghar.manishghimire01.com.np/",
+  },
   {
     slug: "oraculum",
     Img: oraculum,

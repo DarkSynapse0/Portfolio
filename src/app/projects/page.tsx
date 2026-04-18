@@ -4,11 +4,18 @@ import DG from "../../Gallery/DG.png";
 import PT from "../../Gallery/PT.png";
 import CCT from "../../Gallery/CCT.png";
 import oraculum from "../../Gallery/oraculum.png";
+import nayaghar from "../../Gallery/nayaghar.png";
 import ProjectCard from "../../components/ProjectCard";
 import { abrilFatface } from "@/components/Fonts";
 
 // Project data object
 const projects = [
+  {
+    Img: nayaghar,
+    title: "NayaGhar",
+    desc: "NayaGhar is a housing platform that connects students and young professionals moving to cities across Nepal with safe, affordable, and verified housing options.",
+    href: "/projects/nayaghar",
+  },
   {
     Img: oraculum,
     title: "Oraculum",

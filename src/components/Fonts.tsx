@@ -1,18 +1,18 @@
-import { Abril_Fatface, Lato, Josefin_Slab } from "next/font/google";
+import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
 
-const abrilFatface = Abril_Fatface({
-  weight: "400",
+export const instrumentSerif = Instrument_Serif({
+  weight: ["400"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
+  variable: "--font-instrument-serif",
 });
 
-const lato = Lato({
-  weight: "400",
+export const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const josefinSlab = Josefin_Slab({
-  weight: "400",
+export const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
 });
-
-export { abrilFatface, lato, josefinSlab };

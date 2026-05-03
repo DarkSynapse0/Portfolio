@@ -1,23 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "@/components/Footer";
+import CursorGlow from "@/components/CursorGlow";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { instrumentSerif, inter, jetbrainsMono } from "@/components/Fonts";
 
 export const metadata: Metadata = {
-  title: "Manish Ghimire",
-  description: "Portfolio Site",
+  title: "Manish Ghimire — Frontend Developer",
+  description:
+    "Frontend developer building thoughtful, fast, and well-crafted interfaces.",
 };
 
 export default function RootLayout({
@@ -28,13 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${instrumentSerif.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased relative`}
       >
+        <div className="grain" aria-hidden />
+        <CursorGlow />
         <NavBar />
-        {children}
-        <SpeedInsights />
+        <main className="relative z-10">{children}</main>
         <Footer />
-
+        <SpeedInsights />
       </body>
     </html>
   );
